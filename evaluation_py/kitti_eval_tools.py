@@ -1,11 +1,8 @@
 import io as sysio
 import os
-
 import numba
 import numpy as np
-
 from rotate_iou import rotate_iou_gpu_eval
-
 
 @numba.jit
 def get_thresholds(scores: np.ndarray, num_gt, num_sample_pts=41):
@@ -940,8 +937,9 @@ if __name__ == "__main__":
     import warnings
     warnings.filterwarnings('ignore')
 
-    label_file = r'E:\fy_works\data\KITTI\object\training\label_2_3dop'
-    pred_file = r'E:\fy_works\save_model\centernet\kitti_3dop\results_0222'
-    current_classes = [0, 1, 2]  # or ['Car', 'Pedestrian', 'Cyclist']
+    label_file = '/home/dell/PaperCode/data/ObjectDetection/kitti_Hqss/MD_KITTI/validation/label_2'
+    pred_file = '/home/dell/PaperCode/MyDetection/MS-LGNN/preds/Car/test24'
+    # current_classes = [0, 1, 2]  # or ['Car', 'Pedestrian', 'Cyclist']
+    current_classes = [0]
 
     store_and_print_result(label_file, pred_file, current_classes)

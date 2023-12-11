@@ -952,14 +952,16 @@ bool eval(string gt_dir, string result_dir, Mail* mail){
 int32_t main (int32_t argc,char *argv[]) {
 
   // we need 2 or 4 arguments!
-  if (argc!=3) {
-    cout << "Usage: ./eval_detection_3d_offline gt_dir result_dir" << endl;
-    return 1;
-  }
+  // if (argc!=3) {
+  //   cout << "Usage: ./eval_detection_3d_offline gt_dir result_dir" << endl;
+  //   return 1;
+  // }
 
   // read arguments
-  string gt_dir = argv[1];
-  string result_dir = argv[2];
+  // string gt_dir = argv[1];
+  // string result_dir = argv[2];
+  string gt_dir = "/home/dell/PaperCode/data/ObjectDetection/kitti_Hqss/MD_KITTI/validation/label_2";
+  string result_dir = "/home/dell/PaperCode/MyDetection/MS-LGNN/preds/Car/test24";
 
   // init notification mail
   Mail *mail;
