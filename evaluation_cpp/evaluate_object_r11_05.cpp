@@ -951,7 +951,7 @@ int32_t main (int32_t argc,char *argv[]) {
   // string gt_dir = argv[1];
   // string result_dir = argv[2];
   string gt_dir = "/home/dell/PaperCode/data/ObjectDetection/kitti_Hqss/MD_KITTI/validation/label_2";
-  string result_dir = "/home/dell/PaperCode/MyDetection/MS-LGNN/preds/Car/test24";
+  string result_dir = "/home/dell/PaperCode/MyDetection/DS-LV-GGNN/preds/kitti/Car/test70";
 
   // init notification mail
   Mail *mail;
