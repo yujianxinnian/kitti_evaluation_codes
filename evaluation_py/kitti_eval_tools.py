@@ -938,7 +938,7 @@ if __name__ == "__main__":
     warnings.filterwarnings('ignore')
 
     label_file = '/home/dell/PaperCode/data/ObjectDetection/kitti_Hqss/MD_KITTI/validation/label_2'
-    pred_file = '/home/dell/PaperCode/MyDetection/DS-LV-GGNN/preds/kitti/Car/test80'
+    pred_file = '/home/dell/PaperCode/MyDetection/DS-LV-GGNN/preds/kitti/Car/test79'
     # current_classes = [0, 1, 2]  # or ['Car', 'Pedestrian', 'Cyclist']
     current_classes = [0]
 
