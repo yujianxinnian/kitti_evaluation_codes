@@ -51,6 +51,7 @@ const int NUM_CLASS = 3;
 // parameters varying per class
 vector<string> CLASS_NAMES;
 // the minimum overlap required for 2D evaluation on the image/ground plane and 3D evaluation
+// const double MIN_OVERLAP[3][3] = {{0.1, 0.05, 0.05}, {0.1, 0.05, 0.05}, {0.1, 0.05, 0.05}};
 const double MIN_OVERLAP[3][3] = {{0.7, 0.5, 0.5}, {0.5, 0.25, 0.25}, {0.5, 0.25, 0.25}};
 // const double MIN_OVERLAP[3][3] = {{0.7, 0.5, 0.5}, {0.7, 0.5, 0.5}, {0.7, 0.5, 0.5}};
 
@@ -951,7 +952,7 @@ int32_t main (int32_t argc,char *argv[]) {
   // string gt_dir = argv[1];
   // string result_dir = argv[2];
   string gt_dir = "/home/dell/PaperCode/data/ObjectDetection/kitti_Hqss/MD_KITTI/validation/label_2";
-  string result_dir = "/home/dell/PaperCode/MyDetection/DS-LV-GGNN/preds/kitti/Car/test86";
+  string result_dir = "/home/dell/PaperCode/MyDetection/DS-LV-GGNN/preds/kitti/Car/t102";
 
   // init notification mail
   Mail *mail;
